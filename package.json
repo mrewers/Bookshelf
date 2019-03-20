@@ -1,0 +1,16 @@
+{
+  "name": "dev-bookshelf",
+  "version": "0.0.1",
+  "description": "In browser e-reader for collection of epubs",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333"
+  }
+}
