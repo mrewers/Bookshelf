@@ -1,0 +1,9 @@
+{
+  "name": "bookshelf",
+  "version": "0.0.1",
+  "description": "In browser e-reader for collection of epubs",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/parser": "^1.8.0"
+  }
+}
