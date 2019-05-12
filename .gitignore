@@ -1,5 +1,8 @@
+# Builds
+dist/
+
 # Dependencies
 node_modules/
 
-# Builds
-dist/
+# Environmental Variables
+.env

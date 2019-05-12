@@ -1,15 +1,22 @@
 import * as Koa from 'koa';
 import * as Router from 'koa-router';
+import { postgresDB } from './database/postgres';
 
-const api = new Koa();
+const koa = new Koa();
 const router = new Router();
 
-router.get('/*', async (ctx) => {
-  ctx.body = 'Hola World!';
-});
+const api = async () => {
+  // Initialize DB
+  await postgresDB();
 
-api.use(router.routes());
+  //Respond with a message to all client requests
+  koa.use( async ctx => {
+    ctx.body = "Connected!";
+  });
+  
+  // Run the API on port 3000
+  koa.listen(3000);
+  console.log('Server running on port 3000');
+}
 
-api.listen(3000);
-
-console.log('Server running on port 3000');
+api();
