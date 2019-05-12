@@ -1,0 +1,13 @@
+{
+  "name": "bookshelf-api",
+  "version": "0.0.1",
+  "description": "In browser e-reader for collection of epubs",
+  "license": "ISC",
+  "scripts": {
+    "api-dev": "tsc-watch --onSuccess \"node ./dist/server.js\""
+  },
+  "devDependencies": {
+    "tsc-watch": "^2.1.2",
+    "typescript": "^3.4.5"
+  }
+}
